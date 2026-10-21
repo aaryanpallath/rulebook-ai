@@ -1,0 +1,17 @@
+name: CI
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
+      - run: uv sync
+      - run: uv run ruff check .
+      - name: Download and parse the rulebook (gold-set and MCP tests skip if the download is blocked)
+        run: >
+          uv run python -c "from rulebook_ai.ingest import build, fetch; build(fetch('data/rules.pdf'), 'data/sections.json')"
+          || echo "::warning::rulebook download failed; data-dependent tests will be skipped"
+      - run: uv run pytest -q -rs

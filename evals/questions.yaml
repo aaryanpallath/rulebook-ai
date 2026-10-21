@@ -1,0 +1,56 @@
+# Gold questions for the 2026-27 NBA playing rules. `gold` lists the section(s) that answer the question; `facts`
+# lists phrase groups that a correct answer must contain (each inner list is "any of"). A test checks every fact
+# phrase actually appears in a gold section's text, unless the answer is inferred (yes/no style).
+# Questions are phrased the way staff or fans ask them, not in rulebook wording, to make retrieval earn its keep.
+answerable:
+  - {id: q01, q: "How long is each regulation period in an NBA game?", gold: [R5-II], facts: [["twelve minutes", "12 minutes"]]}
+  - {id: q02, q: "How long is an overtime period?", gold: [R5-II], facts: [["five minutes", "5 minutes"]]}
+  - {id: q03, q: "How long is halftime?", gold: [R5-II], facts: [["fifteen minutes", "15 minutes"]]}
+  - {id: q04, q: "How many timeouts does each team get during regulation?", gold: [R5-VI], facts: [["seven", "7"]]}
+  - {id: q05, q: "What's the most timeouts a team can use in the fourth quarter?", gold: [R5-VI], facts: [["four", "4"]]}
+  - {id: q06, q: "How many timeouts does a team get in an overtime period?", gold: [R5-VI], facts: [["two", "2"]]}
+  - {id: q07, q: "How many personal fouls does it take for a player to foul out?", gold: [R3-I, R2-VII], facts: [["six", "6", "sixth"]]}
+  - {id: q08, q: "What number does the shot clock start at?", gold: [R7-I], facts: [["24"]]}
+  - {id: q09, q: "When does the shot clock start showing tenths of a second?", gold: [R7-I], facts: [["4.9"]]}
+  - {id: q10, q: "If the offense rebounds its own missed shot off the rim, what is the shot clock reset to?", gold: [R7-IV], facts: [["14"]]}
+  - {id: q11, q: "How long does a team have to get the ball past half court?", gold: [R10-VIII, R4-VI], facts: [["8 seconds", "eight seconds", "8 consecutive seconds"]]}
+  - {id: q12, q: "How long can an offensive player stay in the lane?", gold: [R10-VI], facts: [["three seconds", "3 seconds"]]}
+  - {id: q13, q: "How long can a defender camp in the paint without guarding anyone?", gold: [R10-VII], facts: [["three seconds", "3 seconds"]]}
+  - {id: q14, q: "What counts as actively guarding for the defensive three-second rule?", gold: [R10-VII], facts: [["arm's length", "arm’s length"]]}
+  - {id: q15, q: "How long can a player dribble with his back to the basket below the free throw line?", gold: [R10-XVI], facts: [["five seconds", "5 seconds"]]}
+  - {id: q16, q: "How many steps can a player take after gathering the ball while dribbling?", gold: [R10-XIII, R4-III], facts: [["two steps", "2 steps"]]}
+  - {id: q17, q: "How long does a free throw shooter have to shoot once he has the ball?", gold: [R9-I], facts: [["10 seconds", "ten seconds"]]}
+  - {id: q18, q: "How far is the free throw line from the backboard?", gold: [R1-I], facts: [["15"]]}
+  - {id: q19, q: "How far is the three-point arc from the basket?", gold: [R1-I], facts: [["23’9", "23'9", "23 feet 9", "23 feet, 9", "23’ 9", "23 ft 9"]]}
+  - {id: q20, q: "What size is the backboard?", gold: [R1-II], facts: [["6’", "6 feet", "6'", "6 ft"], ["3 ½", "3½", "3.5", "3 1/2", "three and a half"]]}
+  - {id: q21, q: "How many coach's challenges does a team get?", gold: [R14-I], facts: [["one", "1"], ["second"]]}
+  - {id: q22, q: "Which calls can a coach challenge?", gold: [R14-I], facts: [["personal foul"], ["out-of-bounds", "out of bounds"], ["goaltending", "basket interference"]]}
+  - {id: q23, q: "Can a coach challenge a goaltending call in the last two minutes of the fourth quarter?", gold: [R14-I], facts: [["no longer", "cannot", "can't", "not able", "may not", "not allowed"]], inferred: true}
+  - {id: q24, q: "How does a head coach signal a challenge?", gold: [R14-II], facts: [["twirling", "twirl"]]}
+  - {id: q25, q: "If a challenge only changes a shooting foul into a non-shooting foul on the same player, is the challenge successful?", gold: [R14-V], facts: [["unsuccessful", "not successful", "not be successful", "not considered successful"]]}
+  - {id: q26, q: "Does a team keep its timeout if its second challenge is successful?", gold: [R14-V], facts: [["not retain", "does not retain", "doesn't retain", "will not retain", "won't retain", "does not keep", "doesn't keep", "loses"]], inferred: true}
+  - {id: q27, q: "How many unsportsmanlike technical fouls get a player ejected?", gold: [R12A-V], facts: [["two", "2"]]}
+  - {id: q28, q: "What happens to players who are involved in a fight?", gold: [R12A-VI], facts: [["ejected", "ejection", "eject"]]}
+  - {id: q29, q: "Are free throws awarded for fighting fouls?", gold: [R12A-VI], facts: [["no free throws", "no free throw", "not attempted", "will not be attempted", "are not awarded"]], inferred: true}
+  - {id: q30, q: "What is the penalty for flopping?", gold: [R10-XVII], facts: [["technical foul"]]}
+  - {id: q31, q: "What is the penalty for a transition take foul?", gold: [R12B-XI], facts: [["one free throw", "1 free throw", "single free throw", "a free throw"], ["possession"]]}
+  - {id: q32, q: "Who can shoot the free throw after a transition take foul?", gold: [R12B-XI], facts: [["any player"]]}
+  - {id: q33, q: "What is the penalty for a flagrant foul penalty 1?", gold: [R12B-IV], facts: [["two free throws", "2 free throws"], ["ball", "possession"]]}
+  - {id: q34, q: "How many team fouls in a quarter before the other team shoots free throws on every foul?", gold: [R12B-V], facts: [["four", "4", "fifth", "5th"]]}
+  - {id: q35, q: "In overtime, how many team fouls before the penalty kicks in?", gold: [R12B-V], facts: [["three", "3", "fourth", "4th", "third"]]}
+  - {id: q36, q: "What happens if a player shatters the backboard during a game?", gold: [C-II-G], facts: [["technical foul"]]}
+  - {id: q37, q: "What is the least time that must come off the clock when an inbound is touched and goes straight out of bounds?", gold: [C-II-L], facts: [[":00.3", "0.3", "three-tenths", ".3"]]}
+  - {id: q38, q: "Is instant replay used to check a buzzer-beater if the inbound started with 0.1 seconds left?", gold: [R13-I], facts: [["will not", "not be used", "not used", "is not", "no instant replay", "won't"]], inferred: true}
+  - {id: q39, q: "How tall must the number on the back of a jersey be?", gold: [R3-VI], facts: [["6”", "6\"", "6 inches", "6 inch", "six inches", "6''"]]}
+  - {id: q40, q: "How long is the break before an overtime period starts?", gold: [R5-IV, R5-II], facts: [["2:30", "two minutes and thirty", "2 minutes 30", "two and a half minutes", "2 minutes and 30"]]}
+  - {id: q41, q: "When does a game enter the last two minutes for rules purposes?", gold: [R4-XIII, R5-II], facts: [["2:00"]]}
+  - {id: q42, q: "How long does a team have to replace a player who fouled out?", gold: [R5-II], facts: [["30 seconds", "thirty seconds"]]}
+unanswerable:
+  - {id: u01, q: "What is the NBA salary cap for the 2026-27 season?"}
+  - {id: u02, q: "Who won the 2026 NBA championship?"}
+  - {id: u03, q: "How are draft lottery odds determined?"}
+  - {id: u04, q: "What is the minimum age to enter the NBA draft?"}
+  - {id: u05, q: "What is the league's policy on players betting on games?"}
+  - {id: u06, q: "How much is the luxury tax rate?"}
+  - {id: u07, q: "How many games are played in the NBA Cup group stage?"}
+  - {id: u08, q: "What is the maximum length of a rookie contract?"}

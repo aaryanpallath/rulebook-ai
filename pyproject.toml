@@ -1,0 +1,25 @@
+[project]
+name = "rulebook-ai"
+version = "0.1.0"
+description = "NBA rulebook assistant: hybrid retrieval, an MCP server, a tool-calling agent on a local LLM, and an evaluation of accuracy, citations, abstention, speed and cost"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = ["pdfplumber>=0.11", "numpy>=1.26", "pyyaml>=6", "mcp>=2.3,<3"]
+
+[project.scripts]
+rulebook-mcp = "rulebook_ai.mcp_server:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
